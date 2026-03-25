@@ -70,7 +70,7 @@ a:active {
 
 #menu-de-navegacao ul li a{ 
   padding: 30px 100px;
-  display: inline-block;
+  display: inline-block; 
 }
 
 
@@ -83,6 +83,16 @@ a:active {
 }
 
 
+/* --- Postagens --- */
+.novidade::before {
+  content: "Novidade!";
+  display: inline-block;
+  background: green;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+
+}
 
 
 /* --- Principal >> Postagens principais --- */
@@ -146,11 +156,10 @@ a:active {
 
 
 
-
 /* --- Principal >> Nuvem de tags --- */
 #tags {
   float: right;
-  width: 300px;
+  width: 300px; 
   padding: 15px;
   background-color: black;
   background-image: url(imgs/mula.webp);
@@ -158,6 +167,7 @@ a:active {
   background-size: 300px;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  box-sizing: border-box;
 }
 
 #tags h1 {
@@ -175,6 +185,15 @@ a:active {
   background-color: orange;
   color: white;
   text-shadow: 1px 1px black;
+  position: relative;
+  cursor: pointer;
+}
+
+.tag-1:active,
+.tag-2:active,
+.tag-3:active {
+  left: 2px;
+  top: 2px;
 }
 
 .tag-2 {
@@ -269,4 +288,30 @@ a:active {
   color: black;
   border-color: currentColor;
   box-shadow: none;
+}
+
+/* --- Principal >> Fantasmas --- */
+
+#fantasma {
+  position: absolute;
+  opacity: 0.5;
+}
+
+#fantasma:hover {
+  opacity: 1;
+}
+
+.boo1 {
+  right: 10%;
+  bottom: 80px;
+}
+
+.boo2 {
+  right: 30%;
+  bottom: 180px;
+}
+
+.boo3 { 
+  right: 30%;
+  top: 180px;
 }
